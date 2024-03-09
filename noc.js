@@ -3,7 +3,245 @@ var quiztitle = "NOC Quiz";
 var quiz = [
 
     {
-        'question':"49/55[填空题] 执行以下代码，输出结果为<br>for a in 'mirror':<br>&nbsp;&nbsp;print(a, end=\"\")<br>&nbsp;&nbsp;if a == 'r':<br>&nbsp;&nbsp;&nbsp;&nbsp;break",
+        'question':'1/55[单选题]. 在Python3中，下列程序运行结果为（） print(\'n\'.join([\'a\', \'b\', \'c\']))',
+        'choices':['A.\'abc\'','B.a b c','C.报错','D.None'],
+        'correct':['B.a b c'],
+        'explanation':'\\n为换行，输出内容应为<br>a<br>b<br>c'
+    },
+
+    {
+        'question':'2/55[单选题]. 以下代码段的运行结果为（）<br>b1 = [1, 2, 3]<br>b2 = [2, 3, 4]<br>b3 = [val for val in b1 if val in b2]<br>print(b3)',
+        'choices':['A.[1,2,3,4]','B.[2]','C.[2,3]','D.程序有误'],
+        'correct':['A.[2,3]'],
+        'explanation':'遍历 b1 中元素，如果该元素存在于 b2 中，则将此元素放入 b3'
+    },
+
+    {
+        'question':'3/55[单选题]. 在Python3中，下列程序返回的结果为（）<br>strs = \'123456\'<br>print(strs.find(\'9\')',
+        'choices':['A.None','B.-1','C.错','D.空'],
+        'correct':['B.-1'],
+        'explanation':'查找的子字符串不存在时，返回 -1'
+    },
+
+    {
+        'question':'4/55[单选题]. 以下程序是实现找出1-10中奇数，则横线处应填写（）<br>for i in range(1, 11):<br>&nbsp;&nbsp;if i % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;________<br>&nbsp;&nbsp;print(i)',
+        'choices':['A.break','B.yield','C.continue','D.flag'],
+        'correct':['C.continue'],
+        'explanation':'i 为偶数时，结束当前循环'
+    },
+
+    {
+        'question':'5/55[单选题]. python3中，执行 not 1 and 1 的结果为（）',
+        'choices':['A.True','B.False','C.0','D.1'],
+        'correct':['B.False'],
+        'explanation':''
+    },
+
+    {
+        'question':'6/55[单选题]. 已知 a=-2，b=10/3,则 python 表达式 round(b,1)+abs(a) 的值为（)',
+        'choices':['A.1.3','B.5.33','C.5.4','D.5.3'],
+        'correct':['D.5.3'],
+        'explanation':''
+    },
+
+    {
+        'question':'7/55[单选题]. 关于Python的分支结构，以下选项中描述错误的是（）',
+        'choices':['A.分支结构使用if保留字','B.Python中if-elif-else语句描述多分支结构','C.Python中if-else语句用来形成二分支结构','D.if-else分支结构可以向已经执行过的语句部分跳转'],
+        'correct':['D.if-else分支结构可以向已经执行过的语句部分跳转'],
+        'explanation':''
+    },
+
+    {
+        'question':'8/55[单选题]. 以下代码输出为（）<br>list1 = {\'1\':1,\'2\':2}<br>list2 = list1<br>list1[\'1\']. = 5<br>sum = list1[\'1\']. + list2[\'1\']<br>print(sum)',
+        'choices':['A.1','B.2','C.7','D.10'],
+        'correct':['D.10'],
+        'explanation':''
+    },
+
+    {
+        'question':'9/55[单选题]. 在Python3中，对于以下程序正确的是()<br>lists = [1, 2, 3, 4, 5, 6]<br>print(lists[6:])',
+        'choices':['A.报错','B.[]','C.[1,2,3,4,5,6]','D.[6]'],
+        'correct':['B.[]'],
+        'explanation':''
+    },
+
+    {
+        'question':'10/55[单选题]. 以下循环输出结果是(）<br>kvps = {\'1\': 1, \'2\': 2}<br>theCopy = kvps.copy()<br>kvps[\'1\']. = 5<br>sum = kvps[\'1\']. + theCopy[\'1\']<br>print(sum)',
+        'choices':['A.1','B.2','C.6','D.10'],
+        'correct':['C.6'],
+        'explanation':''
+    },
+
+    {
+        'question':'11/55[单选题]<br>一个段代码定义如下，下列调用结果正确的是（）<br>def bar(multiple):<br>&nbsp;&nbsp;def foo(n):<br>&nbsp;&nbsp;&nbsp;&nbsp;return multiple ** n<br>&nbsp;&nbsp;return foo',
+        'image':'',
+        'choices':['A.bar(2)(3) == 8','B.bar(2)(3) == 6','C.bar(3)(2) == 8','D.bar(3)(2) == 6'],
+        'correct':['A.bar(2)(3) == 8'],
+        'explanation':'bar(2) 相当于 foo，bar(2)(3) 相当于 foo(3)，bar(2)(3) 相当于 2 ** 3 = 2 * 2 * 2'
+    },
+
+    {
+        'question':'12/55[单选题]. 下列程序运行结果为（)<br>a=[1, 2, 3, 4, 5]<br>sums = sum(map(lambda x: x + 3, a[1::3]))<br>print(sums)',
+        'image':'',
+        'choices':['A.10','B.13','C.15','D.17'],
+        'correct':['B.13'],
+        'explanation':'a[start:stop:step]，所以 a[1::3]. 相当于从索引1开始取值，三步取一个，即 a[1::3]=[2,5]，lambda 将每个值加3，再求和，相当于（2+3）+（5+3）'
+    },
+
+    {
+        'question':'13/55[单选题]. 在Python3中，下列程序运行结果说明正确的是（）<br>strs = \'abcd12efg\'<br>print(strs.upper().title())',
+        'image':'',
+        'choices':['A.\'ABCD12EFG\'','B.\'Abc12efg\'','C.语法错误','D.\'Abcd12Efg\''],
+        'correct':['D.\'Abcd12Efg\''],
+        'explanation':'title 函数效果覆盖了 upper 函数效果'
+    },
+
+    {
+        'question':'14/55[单选题]. Python3中，下列对程序描述正确的是（)<br>lists = [1, 2, 3, 4, 5, 6]<br>lists.append([7,8,9])<br>print(lists)',
+        'image':'',
+        'choices':['A.[1,2,3,4,5,6]','B.[1,2,3,4,5,6,[7,8,9]','C.[1,2,3,4,5,6,7,8,9]','D.[7,8,9]'],
+        'correct':['B.[1,2,3,4,5,6,[7,8,9]'],
+        'explanation':''
+    },
+
+    {
+        'question':'15/55[单选题]. 在Python3中，下列正确的是()<br>lists = [1, 2, 3]<br>lists.insert(2, [7,8,9])<br>print(lists)',
+        'image':'',
+        'choices':['A.[1,2,3,7,8,9]','B.[1,2,3,[7,8,9]]','C.[1,2,[7,8,9],3]','D.[1,2,7,8,9,3]'],
+        'correct':['C.[1,2,[7,8,9],3]'],
+        'explanation':''
+    },
+
+    {
+        'question':'16/55「单选题]. 在Python3中，下列程序运行结果为（）<br>lists = [1, 2, 3, 4]<br>tmp = 0<br>for i,j in enumerate(lists):<br>&nbsp;&nbsp;tmp +=i*j<br>print(tmp)',
+        'image':'',
+        'choices':['A.20','B.30','C.100','D.None'],
+        'correct':['A.20'],
+        'explanation':''
+    },
+
+    {
+        'question':'17/55[单选题]. 下图为A、B、C、D四个小镇及小镇之间的火车线路。双箭头上的两个数字表示两地之间火车（每个方向一列火车）每小时的出发时刻和到达时刻。例如，从A到B的火车依次于8:28、9:28、10:28等时刻出发，分别在10分钟后，即8:38、9:38和10:38到达B。同样地，从B到A的火车也依次于8:28、9:28、10:28等时刻出发,并在10分钟后到达A。海狸于8:45到达小镇A的火车站，他想坐火车去小镇D。那么，他最快几点能到达小镇D的火车站呢？',
+        'image':'noc/202317.png',
+        'choices':['A.9:37','B.9:52','C.10:37','D.10:52'],
+        'correct':['A.'],
+        'explanation':''
+    },
+
+    {
+        'question':'18/55[单选题]. 下图是一个被划分为若干方格的公园，方格中的数字代表游客留在那里的垃圾数量。公园里有两个机器人Anton和Boris,它们会按照指令收集垃圾。<br>首先，让机器人Anton按照如下的指令依次进行工作：<br>↑=向上 ↑=向上 ←=向左<br>接着，让机器人Boris按照如下指令依次进行工作：<br>↑=向上 ↑=向上 ←=向左<br>请问机器人Boris按照指令将收集多少垃圾呢？',
+        'image':'noc/202318.png',
+        'choices':['A.3','B.9','C.11','D.12'],
+        'correct':['B.9'],
+        'explanation':''
+    },
+
+    // {
+    //     'question':'19/55[单选题]. 7只海狸在玩音乐椅游戏，但他们不知道规则。音乐开始播放时，海狸会按照他们想要的任何方向移动，而且1把椅子可以同时被多只海狸坐下。在每个回合中，大型海狸（A和B）会逆时针绕过3把椅子，中型海狸（C和D）逆时针绕过2把椅子，而小型的海狸（E，G和F）只能顺时针绕过1把椅子。在三个回合后，哪几把椅子会空着？',
+    //     'image':'noc/202319.png',
+    //     'choices':['A.2号和7号','B.3号和7号','C.1号和2号','D.1号和3号'],
+    //     'correct':['A.'],
+    //     'explanation':''
+    // },
+
+    {
+        'question':'20/55[单选题]. 海狸麦莉坐在山顶上，山上有三条瀑布汇聚成一条河流。麦莉可以往任意一条瀑布中放入一根胡萝卜、一根木头或条鱼。这些河流上有几座桥，每座桥都有水怪。水怪有一种超能力：可以替换流经桥下的物品，如当胡萝下流经①号瀑布下的第一座桥时，水怪将胡萝卜替换为鱼，其他如右图所示。海狸佳佳坐在河的尽头，等待从河中收到物品。如果海狸佳佳想要收到一根木头，海狸麦莉最初应该往哪条瀑布放入哪种物品（）',
+        'image':'noc/202320.png',
+        'choices':['A.在①号瀑布中放一条鱼','B.在②号瀑布中放一条鱼','C.在②号瀑布中放一根胡萝卜','D.在③号瀑布中放一根胡萝卜'],
+        'correct':['A.'],
+        'explanation':''
+    },
+
+    {
+        'question':'21/55「单选题]. 鲍比班上的学生打算体育课到操场踢足球，但需要满足三个条件：<br>(1）只能在晴天踢足球;<br>(2)只有当风速低于20km/h时，学校才允许进行户外活动；<br>(3)没有其他班级预定操场。<br>于是，鲍比班上的学生决定先了解下周的天气和操场的预定情况。下周的天气预报如下图所示：鲍比班上的学生下周哪天可以在体育课上去操场踢足球？',
+        'image':'noc/202321.png',
+        'choices':['A.星期一','B.星期二','C.星期三','D.星期四'],
+        'correct':['D.星期四'],
+        'explanation':''
+    },
+
+    {
+        'question':'22/55[单选题]. 以下python代码的输出是什么？（）<br>numbers = [1, 2, 3, 4]<br>numbers.append([5, 6, 7, 8])<br>print(len(numbers))',
+        'image':'',
+        'choices':['A.4','B.5','C.8','D.12'],
+        'correct':['B.5'],
+        'explanation':''
+    },
+
+    {
+        'question':'23/55[单选题]. 下面关于return说法正确的是',
+        'image':'',
+        'choices':['A.python函数中必须有return','B.return可以返回多个值','C.return没有返回值时，函数自动返回Null','D.执行到return时，程序将停止函数内return后面的语句'],
+        'correct':['B.return可以返回多个值'],
+        'explanation':'python执行到return语句时，会退出函数，return之后的语句不再执行。但将return语句放在try语句块中，是个例外'
+    },
+
+    {
+        'question':'24/55[单选题]. x =12.34<br>print(type(x))',
+        'image':'',
+        'choices':['A.<class \'str\' >','B.<class \'float\' >','C.<class \'bool\' >','D.<class \'int\' >'],
+        'correct':['B.<class \'float\' >'],
+        'explanation':''
+    },
+
+    {
+        'question':'25/55[单选题]. 在Python3中，有关于break的用法，下列代码输出是（）<br>for i in \'python\':<br>&nbsp;&nbsp;if i == \'h\':<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;print(i)',
+        'image':'',
+        'choices':["A.'p','y','t','h','o','n'","B.'p','y','t'","C.'p',y','t','h'","D.pyt"],
+        'correct':["D.pyt"],
+        'explanation':'p<br>y<br>t'
+    },
+
+    {
+        'question':'26/55[单选题]. 厨师要为晚餐准备两道菜，他不想让两道菜相似，在厨师看来，如果使用了两种及以上的相同食材，这两道菜就会相似。上面哪两道菜是相似的？',
+        'image':'noc/202326.png',
+        'choices':['A.鸡汤和意大利面','B.鸡汤和核桃沙拉','C.鸡汤和鸡蛋沙拉','D.核桃沙拉和蛋糕'],
+        'correct':['C.鸡汤和鸡蛋沙拉'],
+        'explanation':''
+    },
+
+    {
+        'question':'27/55[单选题]. 有一个怪物藏在地牢里，下面是地牢的地图。灰色格子是怪物无法通过的墙壁，黄色格子是怪物可能藏身的地方。如果想要抓住怪物，可以点击格子，在格子里放置红块，来阻断地牢的通路。当怪物只能藏在一个格子（无法通向其他格子）时就能抓住怪物。请问最少需要放置几个红块，就能抓住怪物？（）',
+        'image':'noc/202327.png',
+        'choices':['A.2个','B.4个','C.6个','D.8个'],
+        'correct':['C.6个'],
+        'explanation':''
+    },
+
+    {
+        'question':'28/55[单选题]. 下图的网格中，骑士用K表示，还有8个标记为A的方格，骑士每次移动，可以到达标记A的任何一个位置。假设有3个3X3的网格，通过两座桥连接，每座桥的长度为2个方格，骑士要从初始位置K到达终点位置X，且确保他始终在方格中或桥梁中，请问骑士至少需要移动几次？',
+        'image':'noc/202328.png',
+        'choices':['A.6次','B.7次','C.8次','D.9次'],
+        'correct':['A.6次'],
+        'explanation':''
+    },
+
+    {
+        'question':'29/55[单选题]. 海狸学校的海狸们根据他们在比赛中犯下错误的数量，排成特殊的队形。规则是，上面的数字总是小于下面的两个数字，且同一结点下左边的数字大于右边的数字。本尼犯了7个错误，但他来晚了。他站在灰色位置，这是违反规则的。为了恢复队形，他反复与上方的海狸交换位置，直到再次符合规则。最后正确的队形是什么（）',
+        'image':'noc/202329.png',
+        'choices':['A.','B.','C.','D.'],
+        'correct':['A.'],
+        'explanation':''
+    },
+
+    {
+        'question':'30/55[单选题]. 安、本、查理、丹尼四只海狸都有红色保龄球和白色保龄球。他们需要从左向右依次将7个保龄球排成一排。排列规则如下：<br>(1）从左向右数，第3个保龄球必须是红色的；<br>(2）如果数到一个红色的保龄球，那么下一个保龄球也必须是红色的。<br>下图为安、本、查理、丹尼排列的保龄球。请问排保龄球时，谁没有遵守规则（）',
+        'image':'noc/202330.png',
+        'choices':['A.安','B.本','C.查理','D.丹尼'],
+        'correct':['D.丹尼'],
+        'explanation':''
+    },
+
+    // {
+    //     'question':'',
+    //     'image':'',
+    //     'choices':['A.','B.','C.','D.'],
+    //     'correct':['A.'],
+    //     'explanation':''
+    // },
+
+    {
+        'question':"49/55[填空题]. 执行以下代码，输出结果为<br>for a in 'mirror':<br>&nbsp;&nbsp;print(a, end=\"\")<br>&nbsp;&nbsp;if a == 'r':<br>&nbsp;&nbsp;&nbsp;&nbsp;break",
         'choices':['A.mir','B.aaa','C.aa','D.mi'],
         'correct':['A.mir'],
         'explanation':'先打印，再判断'
@@ -17,35 +255,35 @@ var quiz = [
     },
 
     {
-        'question':'51/55[填空题] 执行print(1 + 2 * 2 + 6 / 3) 的结果为',
+        'question':'51/55[填空题]. 执行print(1 + 2 * 2 + 6 / 3) 的结果为',
         'choices':['A.4','B.7.0','C.7','D.4.0'],
         'correct':['B.7.0'],
         'explanation':'整除操作符是//，/是浮点除'
     },
 
     {
-        'question':'52/55[填空题] 循环语句 for i in range(8,-4,-2)执行了几次循环',
+        'question':'52/55[填空题]. 循环语句 for i in range(8,-4,-2)执行了几次循环',
         'choices':['A.6','B.7','C.5','D.0'],
         'correct':['A.6'],
         'explanation':'range 含头不含尾'
     },
 
     {
-        'question':'53/55[填空题] 切片选取的区间是___型的，不包括结束位的值',
+        'question':'53/55[填空题]. 切片选取的区间是___型的，不包括结束位的值',
         'choices':['A.左开右闭','B.左闭右开','C.左开右开','D.左闭右闭'],
         'correct':['B.左闭右开'],
         'explanation':''
     },
 
     {
-        'question':'54/55[填空题] 下面代码的输出结果是<br>x=1<br>x *= 3+5**2<br>print(x)',
+        'question':'54/55[填空题]. 下面代码的输出结果是<br>x=1<br>x *= 3+5**2<br>print(x)',
         'choices':['A.16','B.13','C.28','D.35'],
         'correct':['C.28'],
         'explanation':'5**2 == 5 * 5'
     },
 
     {
-        'question':'55/55[填空题] 阅读以下程序，程序运行后会输出几个 hello<br>n= 2<br>while n < 5:<br>&nbsp;&nbsp;print(\"hello\")<br>&nbsp;&nbsp;n=n+1',
+        'question':'55/55[填空题]. 阅读以下程序，程序运行后会输出几个 hello<br>n= 2<br>while n < 5:<br>&nbsp;&nbsp;print(\"hello\")<br>&nbsp;&nbsp;n=n+1',
         'choices':['A.2','B.3','C.4','D.5'],
         'correct':['B.3'],
         'explanation':''
@@ -59,7 +297,7 @@ var quiz = [
     },
 
     {
-        'question':'代码 print( 10 / 2 == 5.0) 输出的结果是?( )',
+        'question':'. 代码 print( 10 / 2 == 5.0) 输出的结果是?( )',
         'choices':['A.True','B.False','C.-1','D.0'],
         'correct':['A.True'],
         'explanation':'/代表除法运算，除法运算的结果是浮点数。所以 10/2 结果是 5.0。'
@@ -165,7 +403,7 @@ var quiz = [
     },
 
     {
-        'question':'执行下面的代码，正确的结果为( )<br>list = [1, 2, 3]<br>for i in range(2):<br>&nbsp;&nbsp;list.append(4)<br>&nbsp;&nbsp;list.pop(0)<br>print(list)',
+        'question':'执行下面的代码，正确的结果为( ). <br>list = [1, 2, 3]<br>for i in range(2):<br>&nbsp;&nbsp;list.append(4)<br>&nbsp;&nbsp;list.pop(0)<br>print(list)',
         'choices':['A.[1，2，3]','B.[1，2，3，4]','C.[2, 3, 4]','D.[3, 4, 4]'],
         'correct':['D.[3, 4, 4]'],
         'explanation':'这里的 for 循环次数是 2 次。第一次循环，往列表中的末尾添加新的元素 4，列表变成了 [1，2，3，4]，然后移除列表索引位置为 0 的元素，列表变成了 [2，3，4]。第二次循环，继续往列表中的末尾添加新的元素 4，列表变成了 [2，3，4，4]，然后移除列表索引位置为 0 的元素，列表变成了 [3，4，4]'
@@ -187,10 +425,10 @@ var quiz = [
     },
 
     {
-        'question':'运行下方代码段，输出的结果是( ).<br>import numpy<br>a = numpy.arange(4)<br>b = [2]<br>print(a*b)',
+        'question':'运行下方代码段，输出的结果是( ). <br>import numpy<br>a = numpy.arange(4)<br>b = [2]<br>print(a*b)',
         'choices':['A.8','B.[2*4]','C.[ 0 2 4 6 ]','D.[ 2 4 6 8 ]'],
         'correct':['C.[ 0 2 4 6 ]'],
-        'explanation':'变量 a 的值为：[0 1 2 3 ]，变量 b 的值为：[2] ，print 打印执行的计算式 a*b 的结果为[ 0 2 4 6]。'
+        'explanation':'变量 a 的值为：[0 1 2 3 ]，变量 b 的值为：[2]. ，print 打印执行的计算式 a*b 的结果为[ 0 2 4 6]。'
     },
 
     {
@@ -201,14 +439,14 @@ var quiz = [
     },
 
     {
-        'question':'运行下方代码段，下列叙述中正确的是( )<br>seq = eval(input())<br>if len(seq)>3:<br>&nbsp;&nbsp;seq.pop()<br>else:<br>&nbsp;&nbsp;seq.append(\'5\')<br>print(seq)',
+        'question':'运行下方代码段，下列叙述中正确的是( ). <br>seq = eval(input())<br>if len(seq)>3:<br>&nbsp;&nbsp;seq.pop()<br>else:<br>&nbsp;&nbsp;seq.append(\'5\')<br>print(seq)',
         'choices':['A.输入[1,2,3,4]，输出[1, 2, 3]','B.输入(4,5,6,7)，输出(4, 5, 6)','C.输入[1,3]，输出[1, 3, 5]','D.输入(5,5)，输出(5, 5, 5)'],
         'correct':['A.','D.'],
         'explanation':'首先 函数 eval() 将输入的字符串转换为 python 对应到的数据类型，再判断变量的长度是否大于 3，若成立，则删除变量的最后一项；否则将字符串 \'5\' 添加到变量的最后。选项 A，输入[1,2,3,4]，判断成立，输出[1, 2, 3]；选项 B，输入(4,5,6,7)，判断成立，执行至 seq.pop()，程序报错，元组没有 pop()方法；选项 C，输入[1,3]，判断不成立，输出[1, 3, \'5\']；选项 D，输入(5,5)，判断不成立，执行 seq.append(\'5\')，程序报错，元组没有 append()方法'
     },
 
     {
-        'question':'将列表 [1, 3, 0, 4, 2, 6, 5] 进行排序，并将过程中的结果打印如下: <br>[1, 3, 0, 4, 2, 6, 5]<br>[1, 3, 0, 4, 2, 6, 5]<br>[0, 1, 3, 4, 2, 6, 5]<br>[0, 1, 3, 4, 2, 6, 5]<br>[0, 1, 2, 3, 4, 6, 5]<br>[0, 1, 2, 3, 4, 6, 5]<br>[0, 1, 2, 3, 4, 5, 6]<br>请问使用的是一下那种排序算法呢?',
+        'question':'将列表 [1, 3, 0, 4, 2, 6, 5]. 进行排序，并将过程中的结果打印如下: <br>[1, 3, 0, 4, 2, 6, 5]<br>[1, 3, 0, 4, 2, 6, 5]<br>[0, 1, 3, 4, 2, 6, 5]<br>[0, 1, 3, 4, 2, 6, 5]<br>[0, 1, 2, 3, 4, 6, 5]<br>[0, 1, 2, 3, 4, 6, 5]<br>[0, 1, 2, 3, 4, 5, 6]<br>请问使用的是一下那种排序算法呢?',
         'choices':['A.快速排序','B.冒泡排序','C.选择排序','D.插入排序'],
         'correct':['D.插入排序'],
         'explanation':'插入排序的基本思想是将一个数据插入一个已经有序的列表中，生成一个新的有序列表。对一个乱序列表进行插入排序的思路是，遍历列表，依次取出列表中的数据，与前面的数据一一进行比较，如果比前一个数据小，就交换位置，直到遍历完列表的最后一个数据为止。'
@@ -229,7 +467,7 @@ var quiz = [
     },
 
     {
-        'question':'运行下方代码段，输出的结果是( )。<br>import numpy<br>a = numpy.arange(3,8)<br>b = [3]<br>print(a-b)',
+        'question':'运行下方代码段，输出的结果是( ). <br>import numpy<br>a = numpy.arange(3,8)<br>b = [3]<br>print(a-b)',
         'choices':['A.[0 5]','B.[3 4 5 6 7]','C.[0 1 2 3 4]','D.[0 1 2 3 4 5]'],
         'correct':['C.[0 1 2 3 4]'],
         'explanation':'a 产生从 3-8 的数组，包含 3 不包含 8，结果就是[3 4 5 6 7]，在与 b 进行广播运算，数组里的每个数都-3，结果就是 [0 1 2 3 4]'
@@ -267,7 +505,7 @@ var quiz = [
     },
 
     {
-        'question':'[多选]哪个选项对 turtle.done()的描述是正确的?( )',
+        'question':'[多选]. 哪个选项对 turtle.done()的描述是正确的?( )',
         'choices':['A.turtle.done()是用来隐藏 turtle 绘制画笔','B.turtle.done()用来停止画笔绘制','C.turtle.done()是用来在绘画结束后，保持绘画的窗口不关闭的','D.我们必须要在程序的最后写上 turtle.done()，不然程序运行会报错'],
         'correct':['B.turtle.done()用来停止画笔绘制','C.turtle.done()是用来在绘画结束后，保持绘画的窗口不关闭的'],
         'explanation':'turtle.done() 语句可以让画笔停止绘制，但是窗口不会关闭。一般我们会把 这个语句放在程序的最后，让我们能够看到程序最后的绘制结果。'
@@ -302,7 +540,7 @@ var quiz = [
     },
 
     {
-        'question':'[多选]现有 PAI = 3.1415926 作为浮点数变量，下列代码可以将 PAI 保留三位小数并输出的 是?',
+        'question':'[多选]. 现有 PAI = 3.1415926 作为浮点数变量，下列代码可以将 PAI 保留三位小数并输出的 是?',
         'choices':['A.print(f"{PAI:.5f}")','B.print(f"{PAI:0.3f}")','C.print(round(PAI, 3))','D.print(round(PAI))'],
         'correct':['B.print(f"{PAI:0.3f}")','C.print(round(PAI, 3))'],
         'explanation':'将浮点数小数点后保留三位数有两种方法，一种是字符串格式化，一种是 round() 函数。'
@@ -320,7 +558,7 @@ var quiz = [
         'question':'[多选]现有字符串 s = \'hello world\' ，以下操作能获得字符串 \'llo\' 的有? ',
         'choices':['A.s[3]','B.s[2:5]','C.s[2:4]','D.s[-9:-6]'],
         'correct':['B.s[2:5]','D.s[-9:-6]'],
-        'explanation':'字符串切片的格式为 str[开始索引:结束索引] ，并且在切片操作中，结束索引的值不取。'
+        'explanation':'字符串切片的格式为 str[开始索引:结束索引]. ，并且在切片操作中，结束索引的值不取。'
     },
 
     {
