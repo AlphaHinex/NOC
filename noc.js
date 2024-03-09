@@ -12,7 +12,7 @@ var quiz = [
     {
         'question':'2/55[单选题]. 以下代码段的运行结果为（）<br>b1 = [1, 2, 3]<br>b2 = [2, 3, 4]<br>b3 = [val for val in b1 if val in b2]<br>print(b3)',
         'choices':['A.[1,2,3,4]','B.[2]','C.[2,3]','D.程序有误'],
-        'correct':['A.[2,3]'],
+        'correct':['C.[2,3]'],
         'explanation':'遍历 b1 中元素，如果该元素存在于 b2 中，则将此元素放入 b3'
     },
 
@@ -52,7 +52,7 @@ var quiz = [
     },
 
     {
-        'question':'8/55[单选题]. 以下代码输出为（）<br>list1 = {\'1\':1,\'2\':2}<br>list2 = list1<br>list1[\'1\']. = 5<br>sum = list1[\'1\']. + list2[\'1\']<br>print(sum)',
+        'question':'8/55[单选题]. 以下代码输出为（）<br>list1 = {\'1\':1,\'2\':2}<br>list2 = list1<br>list1[\'1\'] = 5<br>sum = list1[\'1\'] + list2[\'1\']<br>print(sum)',
         'choices':['A.1','B.2','C.7','D.10'],
         'correct':['D.10'],
         'explanation':''
@@ -148,7 +148,7 @@ var quiz = [
         'question':'20/55[单选题]. 海狸麦莉坐在山顶上，山上有三条瀑布汇聚成一条河流。麦莉可以往任意一条瀑布中放入一根胡萝卜、一根木头或条鱼。这些河流上有几座桥，每座桥都有水怪。水怪有一种超能力：可以替换流经桥下的物品，如当胡萝下流经①号瀑布下的第一座桥时，水怪将胡萝卜替换为鱼，其他如右图所示。海狸佳佳坐在河的尽头，等待从河中收到物品。如果海狸佳佳想要收到一根木头，海狸麦莉最初应该往哪条瀑布放入哪种物品（）',
         'image':'noc/202320.png',
         'choices':['A.在①号瀑布中放一条鱼','B.在②号瀑布中放一条鱼','C.在②号瀑布中放一根胡萝卜','D.在③号瀑布中放一根胡萝卜'],
-        'correct':['A.'],
+        'correct':['B.在②号瀑布中放一条鱼'],
         'explanation':''
     },
 
@@ -232,13 +232,133 @@ var quiz = [
         'explanation':''
     },
 
+    {
+        'question':'31/55[多选题]. Python数据类型中属于数字类型的是（）',
+        'image':'',
+        'choices':['A.int','B.float','C.complex','D.list'],
+        'correct':['A.int','B.float'],
+        'explanation':''
+    },
+
+    {
+        'question':'32/55[多选题]. 以下选项中符合Python语言变量命名规则的是（）',
+        'image':'',
+        'choices':['A.TempStr','B._AI','C.K','D.3_1'],
+        'correct':['A.TempStr','B._AI','C.K'],
+        'explanation':''
+    },
+
+    {
+        'question':'33/55[多选题]. d={\"大海\"：\"蓝色\"，\"天空\"：\"灰色\"，\"大地\"：\"黑色\"}<br>print(d[\"大地\"],d.get(\"大地\",\"黄色\"))',
+        'image':'',
+        'choices':['A.黑色 黄色','B.黑色 灰色','C.黑色 蓝色','D.黑色 黑色'],
+        'correct':['D.黑色 黑色'],
+        'explanation':''
+    },
+
     // {
-    //     'question':'',
+    //     'question':'34/55[多选题]. 以下关于组合数据类型的描述，正确的是（）',
     //     'image':'',
-    //     'choices':['A.','B.','C.','D.'],
+    //     'choices':['A.字典类型的键可以用的数据类型包括字符串，元组以及列表','B.python的集合类型跟数学中的集合概念一致，都是多个数据项的无序组合','C.集合类型是一种具体的数据类型','D.序列类似和映射类型都是一类数据类型的总称'],
     //     'correct':['A.'],
     //     'explanation':''
     // },
+
+    {
+        'question':'36/55「多选题]. 给出如下代码，以下选项中描述正确的是<br>import random<br>num = random.randint(1, 10)<br>while True:<br>&nbsp;&nbsp;if num >= 9:<br>&nbsp;&nbsp;&nbsp;&nbsp;break<br>&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;num = random.randint(1, 10)',
+        'image':'',
+        'choices':['A.random.randint (1,10)生成 [1,10] 之间的整数','B.import random代码是可以省略的','C.这段代码的功能是程序自动猜数字','D.while True:创建了一个永远执行的循环'],
+        'correct':['C.这段代码的功能是程序自动猜数字','D.while True:创建了一个永远执行的循环'],
+        'explanation':''
+    },
+
+    {
+        'question':'37/55[多选题]. 凯特想买一件连衣裙，但是她的需求比较特殊。首先，连衣裙必须是短袖；其次，连衣裙的扣子数要大于3个；最后，袖子上要带有星星。下图中四家商店出示的连衣裙，哪家没有凯特想要买的款式？（）',
+        'image':'noc/202337.png',
+        'choices':['A.BeaverYorker','B.BeaverNova','C.B&B','D.TomTeaver'],
+        'correct':['A.BeaverYorker','D.TomTeaver'],
+        'explanation':''
+    },
+
+    {
+        'question':'38/55[多选题]. 在Python中对两个集合对象实行操作A&B,得到的结果不会是()',
+        'image':'',
+        'choices':['A.并集','B.交集','C.差集','D.异或集'],
+        'correct':['A.并集','C.差集','D.异或集'],
+        'explanation':''
+    },
+
+    {
+        'question':'39/55[多选题]. 运行下面代码，随机结果不可能出现的选项是（）<br>import random<br>print(int(random.random() * 100 + 99))',
+        'image':'',
+        'choices':['A.222','B.98','C.120','D.199'],
+        'correct':['A.222','B.98','D.199'],
+        'explanation':'random.random() 生成的浮点数范围是 0.0 <= X < 1.0'
+    },
+
+    {
+        'question':'40/55[多选题]. 下面代码的执行结果错误的是(）<br>if -1:<br>&nbsp;&nbsp;print(\"True.\")<br>else:<br>&nbsp;&nbsp;print(\"False.\")',
+        'image':'',
+        'choices':['A.-1','B.True','C.False','D.0'],
+        'correct':['A.-1','C.False','D.0'],
+        'explanation':'非零的数字作为条件判断时，都为真，0 为假'
+    },
+
+    {
+        'question':'41/55[判断题]. 下面代码的输出结果是 1 1000。（）<br>x=10<br>y=3<br>print(x%y, x**y)',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['A.正确'],
+        'explanation':''
+    },
+
+    {
+        'question':'42/55[判断题]. 下面代码的输出结果是“北京大学”。<br>x={\"姓名\":\"小花\"\"学校\":\"北京大学\"}<br>print(x.pop(\"学校\",\"abcd\"))',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['A.正确'],
+        'explanation':''
+    },
+
+    {
+        'question':'43/55[判断题]. print(\'y\'<\'x\' == False) 的结果是True。',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['B.错误'],
+        'explanation':''
+    },
+
+    {
+        'question':'44/55 [判断题]. 浮点数是小数在Python中的表达方式之一。在Python中，浮点数默认为单精度的浮点数。',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['B.错误'],
+        'explanation':'Python中的浮点数默认为双精度（double-precision）浮点数，而不是单精度。Python使用双精度浮点数来提供更高的精度和范围。'
+    },
+
+    {
+        'question':'45/55[判断题]. 元组可以作为字典的“键”。',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['B.错误'],
+        'explanation':''
+    },
+
+    {
+        'question':'46/55[判断题]. 3+4j 是合法Python数字类型。',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['A.正确'],
+        'explanation':'在Python中，3+4j 是一个合法的复数表示。Python内置了对复数的支持，使用 j 或 J 来表示复数的虚部。所以，3+4j 表示一个实部为3，虚部为4的复数。'
+    },
+
+    {
+        'question':'47/55[判断题]. 执行以下程序，输出结果是12。（）<br>n=0<br>for i in range(1, 22,2):<br>&nbsp;&nbsp;n=n+ 1<br>print(n)',
+        'image':'',
+        'choices':['A.正确','B.错误'],
+        'correct':['B.错误'],
+        'explanation':''
+    },
 
     {
         'question':"49/55[填空题]. 执行以下代码，输出结果为<br>for a in 'mirror':<br>&nbsp;&nbsp;print(a, end=\"\")<br>&nbsp;&nbsp;if a == 'r':<br>&nbsp;&nbsp;&nbsp;&nbsp;break",
