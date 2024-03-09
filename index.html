@@ -165,20 +165,20 @@
 					// $('.choice').eq(choices).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
 					$('#explanation').html('<span class="incorrect">INCORRECT!</span> ' + htmlEncode(quiz[currentquestion]['correct'] + quiz[currentquestion]['explanation']));
 				}
-				document.getElementById("placecontent").value = "You got " + score + " out of " + quiz.length + " correct.";
+				document.getElementById("placecontent").value = "已答对 " + score + " 题；目前题库数量 " + quiz.length + " 题。";
 				currentquestion++;
 				// clear after process question
 				picked.clear();
 
 				if (currentquestion == quiz.length) {
-					$('#submitbutton').html('GET QUIZ RESULTS').removeClass('btn-success').addClass('btn-info').css({ 'border-color': '#3a87ad', 'color': '#fff' }).on('click', function () {
-						$(this).text('GET QUIZ RESULTS').on('click');
+					$('#submitbutton').html('查看测验结果').removeClass('btn-success').addClass('btn-info').css({ 'border-color': '#3a87ad', 'color': '#fff' }).on('click', function () {
+						$(this).text('查看测验结果').on('click');
 						endQuiz();
 					})
 
 				} else if (currentquestion < quiz.length) {
-					$('#submitbutton').html('NEXT QUESTION &raquo;').removeClass('btn-success').addClass('btn-primary').css({ 'font-weight': 'bold', 'border-color': '#faa732', 'color': '#fff' }).on('click', function () {
-						$(this).text('- CHECK ANSWER -').removeClass('btn-warning').addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' }).on('click');
+					$('#submitbutton').html('下一题 &raquo;').removeClass('btn-success').addClass('btn-primary').css({ 'font-weight': 'bold', 'border-color': '#faa732', 'color': '#fff' }).on('click', function () {
+						$(this).text('- 提交答案 -').removeClass('btn-warning').addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' }).on('click');
 						nextQuestion();
 					})
 				} else {
@@ -284,11 +284,11 @@
 					addChoices(quiz[0]['choices']);
 
 					//add submit button
-					$(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- CHECK ANSWER -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+					$(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- 提交答案 -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
 
-					$(document.createElement('div')).addClass('btn-warning choice-box').attr('id', 'drop').text('- DROP -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
-					$(document.createElement('div')).addClass('btn-info choice-box').attr('id', 'repeat').text('- REPEAT -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
-					$(document.createElement('div')).addClass('btn-danger choice-box').attr('id', 'reset').text('- RESET -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+					$(document.createElement('div')).addClass('btn-warning choice-box').attr('id', 'drop').text('- 去掉此题 -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+					$(document.createElement('div')).addClass('btn-info choice-box').attr('id', 'repeat').text('- 从头开始 -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+					$(document.createElement('div')).addClass('btn-danger choice-box').attr('id', 'reset').text('- 重置题库 -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
 
 					setupButtons(Array.isArray(quiz[0]['correct']));
 				}
@@ -380,7 +380,7 @@
 	</div>
     <div style="display: block;text-align: center;">
         <span id="busuanzi_container_site_uv" style="display: none;">
-          No. <span id="busuanzi_value_site_uv"></span> competitor here.
+          第 <span id="busuanzi_value_site_uv"></span> 位参赛选手
         </span>
     </div>
 </div>	
