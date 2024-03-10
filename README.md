@@ -10,11 +10,11 @@
 
 ```json
 {
-    'question':'[多选]下面哪些代码可以往列表 ls 中添加元素?',
-    'image':'noc/mock27.png',
-    'choices':['A.ls.append()','B.ls.clear()','C.ls.pop()','D.ls.insert()'],
-    'correct':['A.ls.append()','D.ls.insert()'],
-    'explanation':'在 Python 中，append() 和 insert()都可以往列表中增加元素，只是 append 是在最后增加，insert 可以自由的插入列表中。clear() 函数是用来清空列表的。pop()函数是删除最后一项，并且作为返回值。'
+    "question":"[多选]下面哪些代码可以往列表 ls 中添加元素?",
+    "image":"noc/mock27.png",
+    "choices":["A.ls.append()","B.ls.clear()","C.ls.pop()","D.ls.insert()"],
+    "correct":["A.ls.append()","D.ls.insert()"],
+    "explanation":"在 Python 中，append() 和 insert()都可以往列表中增加元素，只是 append 是在最后增加，insert 可以自由的插入列表中。clear() 函数是用来清空列表的。pop()函数是删除最后一项，并且作为返回值。"
 },
 ```
 
