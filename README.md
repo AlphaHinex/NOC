@@ -1,4 +1,4 @@
-# NOC (Novelty, Originality, Creativity) 在线练习
+# 全国中小学信息技术创新与实践大赛（NOC）在线练习
 
 收集到的一些 [NOC](http://s.noc.net.cn/Home/Index) Python 真题和模拟题
 
