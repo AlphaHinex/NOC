@@ -159,11 +159,11 @@
 			function processQuestion(choices) {
 				if (allCorrect(choices)) {
 					// $('.choice').eq(choices).addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' });
-					$('#explanation').html('<span class="correct">CORRECT!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
+					$('#explanation').html('<span class="correct">回答正确!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
 					score++;
 				} else {
 					// $('.choice').eq(choices).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
-					$('#explanation').html('<span class="incorrect">INCORRECT!</span> 正确答案：' + htmlEncode(quiz[currentquestion]['correct']) + '<br>' + htmlEncode(quiz[currentquestion]['explanation']));
+					$('#explanation').html('<span class="incorrect">回答错误!</span> 正确答案：' + htmlEncode(quiz[currentquestion]['correct']) + '<br>' + htmlEncode(quiz[currentquestion]['explanation']));
 				}
 				document.getElementById("placecontent").value = "已答对 " + score + " 题；目前题库数量 " + quiz.length + " 题。";
 				currentquestion++;
