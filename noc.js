@@ -886,45 +886,158 @@ var quiz = [
     },
 
     {
-        "question":"",
+        "question":"19/40 [单选题]已知下方代码，下列哪一项为正确的输出结果？<br>i=0<br>n=8<br>while i <= 5:<br>&nbsp;&nbsp;if n<10:<br>&nbsp;&nbsp;&nbsp;&nbsp;i=i+4<br>&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;i=i+6<br>&nbsp;&nbsp;n=n+i<br>print(n)",
+        "choices":["A.8","B.12","C.22","D.14"],
+        "correct":["C.22"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"20/40[单选题]已知下方代码，当输入的数字为34时，下列哪一项是正确的输出结果？（）s=input('数字：')<br>if s == 34:<br>&nbsp;&nbsp;print(34//5)<br>else:<br>&nbsp;&nbsp;print(34%6)",
+        "choices":["A.4","B.6","C.4<br>6","D.无运行结果"],
+        "correct":["A.4"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"21/40 [单选题]下列程序的运行结果为？（）numbers = [1, 2, 3]<br>for num in numbers:<br>&nbsp;&nbsp;if num % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(1,num * 2)<br>&nbsp;&nbsp;if num % 3 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(2,num * 3)<br>&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;print(3,num // 4)",
         "image":"noc/mock27.png",
-        "choices":["A.","B.","C.","D."],
+        "choices":["A.3 0<br>1 4<br>3 0<br>2 9","B.3 0<br>3 0<br>1 4<br>2 9","C.2,9<br>1,4<br>3,0<br>3,0","D.9<br>4<br>0<br>0"],
+        "correct":["A.3 0<br>1 4<br>3 0<br>2 9"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"22/40 [单选题]下列程序的运行结果为？（）<br>numbers = [1, 2, 3, 4]<br>sum = 0<br>for num in numbers:<br>&nbsp;&nbsp;sum = sum + 1<br>&nbsp;&nbsp;for i in range(num):<br>&nbsp;&nbsp;&nbsp;&nbsp;if i % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + i<br>print(sum)",
+        "choices":["A.0","B.2","C.4","D.8"],
+        "correct":["D.8"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"23/40 [单选题]下列程序的运行结果为？（）<br>num = 1<br>for i in range(3,18):<br>&nbsp;&nbsp;if i % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;num = num * 2<br>&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;num = num // 2<br>print(num)",
+        "choices":["A.0","B.1","C.2","D."],
+        "correct":["B.1"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"24/40[单选题]运行下列程序共执行了多少次？（）<br>for i in range(1,4):<br>&nbsp;&nbsp;for j in range(1,4,2):<br>&nbsp;&nbsp;&nbsp;&nbsp;if i*j>6:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('i*j',i*j)<br>&nbsp;&nbsp;&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('i%j',i%j)",
+        "choices":["A.12次","B.6次","C.9次","D.16次"],
+        "correct":["B.6次"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"25/40[单选题]运行下列程序，最后一次的输出结果为？（）nums = [1, 4,7,23]<br>strs = [2, 4, 7, 9]<br>for n in nums:<br>&nbsp;&nbsp;for s in strs:<br>&nbsp;&nbsp;&nbsp;&nbsp;if n == s:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(s % 3)",
+        "choices":["A.0","B.1","C.2","D.3"],
         "correct":["A.","D."],
         "explanation":"[2024r1]"
     },
 
     {
-        "question":"",
-        "image":"noc/mock27.png",
-        "choices":["A.","B.","C.","D."],
-        "correct":["A.","D."],
+        "question":"26/40 [多选题]已知变量weight=12.5表示重量为12.5kg，变量price=6表示邮费，下列选项中，可以实现重量大于等于10kg的物品，需要支付1.5倍邮费，否则，正常支付邮费的代码是？（）",
+        "choices":["A.if weight >= 10:<br>&nbsp;&nbsp;print('邮费：',1.5*price)<br>else:<br>&nbsp;&nbsp;print('邮费：',price)","B.if weight<10:<br>&nbsp;&nbsp;print('邮费：'1.5*price)<br>else:<br>&nbsp;&nbsp;print('邮费：';price)","C.if weight >= 10:<br>&nbsp;&nbsp;print('邮费：',1.5*price)<br>if weight < 10:<br>&nbsp;&nbsp;print('邮费：',price)","D.if weight >= 10:<br>&nbsp;&nbsp;print('邮费：',1.5*price)<br>if weight <10:<br>&nbsp;&nbsp;print('邮费：',0.5*price)"],
+        "correct":["A.if weight >= 10:<br>&nbsp;&nbsp;print('邮费：',1.5*price)<br>else:<br>&nbsp;&nbsp;print('邮费：',price)","C.if weight >= 10:<br>&nbsp;&nbsp;print('邮费：',1.5*price)<br>if weight < 10:<br>&nbsp;&nbsp;print('邮费：',price)"],
         "explanation":"[2024r1]"
     },
 
     {
-        "question":"",
-        "image":"noc/mock27.png",
-        "choices":["A.","B.","C.","D."],
-        "correct":["A.","D."],
+        "question":"27/40 [多选题]下列代码运行后，两次输出sum的值分别是多少？（）<br>n=5<br>sum = 0<br>while n < 10:<br>&nbsp;&nbsp;n=n+2<br>&nbsp;&nbsp;if sum == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + n<br>&nbsp;&nbsp;&nbsp;&nbsp;print(sum)<br>&nbsp;&nbsp;sum = sum * 2<br>print(sum)",
+        "choices":["A.第一次输出的sum值为：0","B.第一次输出的sum值为：7","C.第二次输出的sum值为：56","D.第二次输出的sum值为：14"],
+        "correct":["B.第一次输出的sum值为：7","C.第二次输出的sum值为：56"],
         "explanation":"[2024r1]"
     },
 
     {
-        "question":"",
-        "image":"noc/mock27.png",
-        "choices":["A.","B.","C.","D."],
-        "correct":["A.","D."],
+        "question":"28/40 [多选题]已知横线处代码用于循环生成0到numbers[i]之间（包含0不包含numbers[i]）的整数序列，下列选项中可以实现该功能的是？（）<br>numbers = [11,28, 76]<br>sum = 0<br>for i in range(len(numbers):<br>&nbsp;&nbsp;if numbers[i] % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;_____________<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if j % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + 2*j<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + i%2<br>print(sum)",
+        "choices":["A.for j in range(numbers[i]):","B.for j in range(0,numbers[i],1):","C.for j in range(O,numbers[i]):","D.for j in range(len(numbers[i]):"],
+        "correct":["A.for j in range(numbers[i]):","B.for j in range(0,numbers[i],1):","C.for j in range(O,numbers[i]):"],
         "explanation":"[2024r1]"
     },
 
     {
-        "question":"",
-        "image":"noc/mock27.png",
-        "choices":["A.","B.","C.","D."],
-        "correct":["A.","D."],
+        "question":"29/40 [多选题]关于下列代码，说法正确的是？（）<br>nums = [3,2,1]<br>s=1<br>for n in nums:<br>&nbsp;&nbsp;for j in range(n):<br>&nbsp;&nbsp;&nbsp;&nbsp;if j // 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s=s*2<br>&nbsp;&nbsp;&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s=s *4<br>print(s)",
+        "choices":["A.程序共循环了4次","B.程序共循环了6次","C.程序输出的结果为64","D.程序输出的结果为128"],
+        "correct":["B.程序共循环了6次","D.程序输出的结果为128"],
         "explanation":"[2024r1]"
     },
 
+    {
+        "question":"30/40[多选题]已知列表foods=「蛋炒饭'，鱼香肉丝，凉拌黄瓜',面条]，判断列表中是否存在元素'炸鸡'的代码书写正确的是？",
+        "choices":["A.for f in foods:<br>&nbsp;&nbsp;if f =='炸鸡':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('有')","B.for f in foods:<br>if f == 炸鸡:<br>&nbsp;&nbsp;print('有')","C.n=0<br>while n < len(foods):<br>&nbsp;&nbsp;if foods[n] =='炸鸡':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('有')<br>&nbsp;&nbsp;n=n+1","D.n=0<br>while n < len(foods):<br>&nbsp;&nbsp;if foods[n] =='炸鸡':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('有')<br>&nbsp;&nbsp;&nbsp;&nbsp;n=n+1"],
+        "correct":["A.for f in foods:<br>&nbsp;&nbsp;if f =='炸鸡':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('有')","C.n=0<br>while n < len(foods):<br>&nbsp;&nbsp;if foods[n] =='炸鸡':<br>&nbsp;&nbsp;&nbsp;&nbsp;print('有')<br>&nbsp;&nbsp;n=n+1"],
+        "explanation":"[2024r1]"
+    },
 
+    {
+        "question":"31/40[判断题]while循环的循环体中只能写一行代码。（）",
+        "choices":["A.正确","B.错误"],
+        "correct":["B.错误"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"32/40[判断题]变量key和变量Key表示同一个变量。",
+        "choices":["A.正确","B.错误"],
+        "correct":["B.错误"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"33/40[判断题]在while循环的执行过程中，只有满足循环判断条件，才会执行循环体。",
+        "choices":["A.正确","B.错误"],
+        "correct":["A.正确"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"34/40[判断题]在if-else语句中，当判断条件为True时，程序会执行else中的代码块。",
+        "choices":["A.正确","B.错误"],
+        "correct":["B.错误"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"35/40[判断题]print(6)和print('6')输出的结果类型相同。",
+        "choices":["A.正确","B.错误"],
+        "correct":["A.正确"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"36/40[判断题]列表中的元素称为索引。",
+        "choices":["A.正确","B.错误"],
+        "correct":["B.错误"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"37/40[判断题]列表中的元素可以是浮点数。",
+        "choices":["A.正确","B.错误"],
+        "correct":["A.正确"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"38/40[判断题]range(0,8)和range(0,8,1)生成的整数序列相同。",
+        "choices":["A.正确","B.错误"],
+        "correct":["A.正确"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"39/40[判断题]len()函数可以用于获取列表的长度。",
+        "choices":["A.正确","B.错误"],
+        "correct":["A.正确"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"40/40[判断题]列表中元素的索引默认从0开始。",
+        "choices":["A.正确","B.错误"],
+        "correct":["A.正确"],
+        "explanation":"[2024r1]"
+    },
 
 ];
