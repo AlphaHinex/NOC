@@ -6,70 +6,70 @@ var quiz = [
         'question':'1/55[单选题]. 在Python3中，下列程序运行结果为（） print(\'\\n\'.join([\'a\', \'b\', \'c\']))',
         'choices':['A.\'abc\'','B.a b c','C.报错','D.None'],
         'correct':['B.a b c'],
-        'explanation':'\\n为换行，输出内容应为<br>a<br>b<br>c'
+        'explanation':'[2023r1]\\n为换行，输出内容应为<br>a<br>b<br>c'
     },
 
     {
         'question':'2/55[单选题]. 以下代码段的运行结果为（）<br>b1 = [1, 2, 3]<br>b2 = [2, 3, 4]<br>b3 = [val for val in b1 if val in b2]<br>print(b3)',
         'choices':['A.[1,2,3,4]','B.[2]','C.[2,3]','D.程序有误'],
         'correct':['C.[2,3]'],
-        'explanation':'遍历 b1 中元素，如果该元素存在于 b2 中，则将此元素放入 b3'
+        'explanation':'[2023r1]遍历 b1 中元素，如果该元素存在于 b2 中，则将此元素放入 b3'
     },
 
     {
         'question':'3/55[单选题]. 在Python3中，下列程序返回的结果为（）<br>strs = \'123456\'<br>print(strs.find(\'9\')',
         'choices':['A.None','B.-1','C.错','D.空'],
         'correct':['B.-1'],
-        'explanation':'查找的子字符串不存在时，返回 -1'
+        'explanation':'[2023r1]查找的子字符串不存在时，返回 -1'
     },
 
     {
         'question':'4/55[单选题]. 以下程序是实现找出1-10中奇数，则横线处应填写（）<br>for i in range(1, 11):<br>&nbsp;&nbsp;if i % 2 == 0:<br>&nbsp;&nbsp;&nbsp;&nbsp;________<br>&nbsp;&nbsp;print(i)',
         'choices':['A.break','B.yield','C.continue','D.flag'],
         'correct':['C.continue'],
-        'explanation':'i 为偶数时，结束当前循环'
+        'explanation':'[2023r1]i 为偶数时，结束当前循环'
     },
 
     {
         'question':'5/55[单选题]. python3中，执行 not 1 and 1 的结果为（）',
         'choices':['A.True','B.False','C.0','D.1'],
         'correct':['B.False'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':'6/55[单选题]. 已知 a=-2，b=10/3,则 python 表达式 round(b,1)+abs(a) 的值为（)',
         'choices':['A.1.3','B.5.33','C.5.4','D.5.3'],
         'correct':['D.5.3'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':'7/55[单选题]. 关于Python的分支结构，以下选项中描述错误的是（）',
         'choices':['A.分支结构使用if保留字','B.Python中if-elif-else语句描述多分支结构','C.Python中if-else语句用来形成二分支结构','D.if-else分支结构可以向已经执行过的语句部分跳转'],
         'correct':['D.if-else分支结构可以向已经执行过的语句部分跳转'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':'8/55[单选题]. 以下代码输出为（）<br>list1 = {\'1\':1,\'2\':2}<br>list2 = list1<br>list1[\'1\'] = 5<br>sum = list1[\'1\'] + list2[\'1\']<br>print(sum)',
         'choices':['A.1','B.2','C.7','D.10'],
         'correct':['D.10'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':'9/55[单选题]. 在Python3中，对于以下程序正确的是()<br>lists = [1, 2, 3, 4, 5, 6]<br>print(lists[6:])',
         'choices':['A.报错','B.[]','C.[1,2,3,4,5,6]','D.[6]'],
         'correct':['B.[]'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':'10/55[单选题]. 以下循环输出结果是(）<br>kvps = {\'1\': 1, \'2\': 2}<br>theCopy = kvps.copy()<br>kvps[\'1\']. = 5<br>sum = kvps[\'1\']. + theCopy[\'1\']<br>print(sum)',
         'choices':['A.1','B.2','C.6','D.10'],
         'correct':['C.6'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -77,7 +77,7 @@ var quiz = [
         'image':'',
         'choices':['A.bar(2)(3) == 8','B.bar(2)(3) == 6','C.bar(3)(2) == 8','D.bar(3)(2) == 6'],
         'correct':['A.bar(2)(3) == 8'],
-        'explanation':'bar(2) 相当于 foo，bar(2)(3) 相当于 foo(3)，bar(2)(3) 相当于 2 ** 3 = 2 * 2 * 2'
+        'explanation':'[2023r1]bar(2) 相当于 foo，bar(2)(3) 相当于 foo(3)，bar(2)(3) 相当于 2 ** 3 = 2 * 2 * 2'
     },
 
     {
@@ -85,7 +85,7 @@ var quiz = [
         'image':'',
         'choices':['A.10','B.13','C.15','D.17'],
         'correct':['B.13'],
-        'explanation':'a[start:stop:step]，所以 a[1::3]. 相当于从索引1开始取值，三步取一个，即 a[1::3]=[2,5]，lambda 将每个值加3，再求和，相当于（2+3）+（5+3）'
+        'explanation':'[2023r1]a[start:stop:step]，所以 a[1::3]. 相当于从索引1开始取值，三步取一个，即 a[1::3]=[2,5]，lambda 将每个值加3，再求和，相当于（2+3）+（5+3）'
     },
 
     {
@@ -93,7 +93,7 @@ var quiz = [
         'image':'',
         'choices':['A.\'ABCD12EFG\'','B.\'Abc12efg\'','C.语法错误','D.\'Abcd12Efg\''],
         'correct':['D.\'Abcd12Efg\''],
-        'explanation':'title 函数效果覆盖了 upper 函数效果'
+        'explanation':'[2023r1]title 函数效果覆盖了 upper 函数效果'
     },
 
     {
@@ -101,7 +101,7 @@ var quiz = [
         'image':'',
         'choices':['A.[1,2,3,4,5,6]','B.[1,2,3,4,5,6,[7,8,9]','C.[1,2,3,4,5,6,7,8,9]','D.[7,8,9]'],
         'correct':['B.[1,2,3,4,5,6,[7,8,9]'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -109,7 +109,7 @@ var quiz = [
         'image':'',
         'choices':['A.[1,2,3,7,8,9]','B.[1,2,3,[7,8,9]]','C.[1,2,[7,8,9],3]','D.[1,2,7,8,9,3]'],
         'correct':['C.[1,2,[7,8,9],3]'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -117,7 +117,7 @@ var quiz = [
         'image':'',
         'choices':['A.20','B.30','C.100','D.None'],
         'correct':['A.20'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -125,7 +125,7 @@ var quiz = [
         'image':'noc/202317.png',
         'choices':['A.9:37','B.9:52','C.10:37','D.10:52'],
         'correct':['B.9:52'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -133,7 +133,7 @@ var quiz = [
         'image':'noc/202318.png',
         'choices':['A.3','B.9','C.11','D.12'],
         'correct':['B.9'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -141,7 +141,7 @@ var quiz = [
         'image':'noc/202319.png',
         'choices':['A.2号和7号','B.3号和7号','C.1号和2号','D.1号和3号'],
         'correct':['A.'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -149,7 +149,7 @@ var quiz = [
         'image':'noc/202320.png',
         'choices':['A.在①号瀑布中放一条鱼','B.在②号瀑布中放一条鱼','C.在②号瀑布中放一根胡萝卜','D.在③号瀑布中放一根胡萝卜'],
         'correct':['B.在②号瀑布中放一条鱼'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -157,7 +157,7 @@ var quiz = [
         'image':'noc/202321.png',
         'choices':['A.星期一','B.星期二','C.星期三','D.星期四'],
         'correct':['D.星期四'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -165,7 +165,7 @@ var quiz = [
         'image':'',
         'choices':['A.4','B.5','C.8','D.12'],
         'correct':['B.5'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -173,7 +173,7 @@ var quiz = [
         'image':'',
         'choices':['A.python函数中必须有return','B.return可以返回多个值','C.return没有返回值时，函数自动返回Null','D.执行到return时，程序将停止函数内return后面的语句'],
         'correct':['B.return可以返回多个值'],
-        'explanation':'python执行到return语句时，会退出函数，return之后的语句不再执行。但将return语句放在try语句块中，是个例外'
+        'explanation':'[2023r1]python执行到return语句时，会退出函数，return之后的语句不再执行。但将return语句放在try语句块中，是个例外'
     },
 
     {
@@ -181,7 +181,7 @@ var quiz = [
         'image':'',
         'choices':['A.<class \'str\' >','B.<class \'float\' >','C.<class \'bool\' >','D.<class \'int\' >'],
         'correct':['B.<class \'float\' >'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -189,7 +189,7 @@ var quiz = [
         'image':'',
         'choices':["A.'p','y','t','h','o','n'","B.'p','y','t'","C.'p',y','t','h'","D.pyt"],
         'correct':["D.pyt"],
-        'explanation':'p<br>y<br>t'
+        'explanation':'[2023r1]p<br>y<br>t'
     },
 
     {
@@ -197,7 +197,7 @@ var quiz = [
         'image':'noc/202326.png',
         'choices':['A.鸡汤和意大利面','B.鸡汤和核桃沙拉','C.鸡汤和鸡蛋沙拉','D.核桃沙拉和蛋糕'],
         'correct':['C.鸡汤和鸡蛋沙拉'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -205,7 +205,7 @@ var quiz = [
         'image':'noc/202327.png',
         'choices':['A.2个','B.4个','C.6个','D.8个'],
         'correct':['C.6个'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -213,7 +213,7 @@ var quiz = [
         'image':'noc/202328.png',
         'choices':['A.6次','B.7次','C.8次','D.9次'],
         'correct':['A.6次'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -221,7 +221,7 @@ var quiz = [
         'image':'noc/202329.png',
         'choices':['A.','B.','C.','D.'],
         'correct':['A.'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -229,7 +229,7 @@ var quiz = [
         'image':'noc/202330.png',
         'choices':['A.安','B.本','C.查理','D.丹尼'],
         'correct':['D.丹尼'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -237,7 +237,7 @@ var quiz = [
         'image':'',
         'choices':['A.int','B.float','C.complex','D.list'],
         'correct':['A.int','B.float'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -245,7 +245,7 @@ var quiz = [
         'image':'',
         'choices':['A.TempStr','B._AI','C.K','D.3_1'],
         'correct':['A.TempStr','B._AI','C.K'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -253,7 +253,7 @@ var quiz = [
         'image':'',
         'choices':['A.黑色 黄色','B.黑色 灰色','C.黑色 蓝色','D.黑色 黑色'],
         'correct':['D.黑色 黑色'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -261,7 +261,7 @@ var quiz = [
         'image':'',
         'choices':['A.字典类型的键可以用的数据类型包括字符串，元组以及列表','B.python的集合类型跟数学中的集合概念一致，都是多个数据项的无序组合','C.集合类型是一种具体的数据类型','D.序列类型和映射类型都是一类数据类型的总称'],
         'correct':['C.集合类型是一种具体的数据类型','D.序列类型和映射类型都是一类数据类型的总称'],
-        'explanation':'正确答案是 C 和 D。C. 集合类型是一种具体的数据类型，这是正确的。在Python中，集合（set）是一个无序的不重复元素序列。D. 序列类似和映射类型都是一类数据类型的总称，这也是正确的。在Python中，序列类型（如列表、元组和字符串）和映射类型（如字典）是两类不同的数据结构类型。A. 字典类型的键可以使用的数据类型实际上是不可变类型，如字符串和元组，但不包括列表，因为列表是可变的。B. Python的集合类型与数学中的集合概念类似，但并不完全一致。在Python中，集合是可变的，这意味着可以添加或删除元素，而数学中的集合通常是不可变的。此外，Python的集合在底层实现上可能会有所不同，但它们确实表示无序的数据集合。'
+        'explanation':'[2023r1]正确答案是 C 和 D。C. 集合类型是一种具体的数据类型，这是正确的。在Python中，集合（set）是一个无序的不重复元素序列。D. 序列类似和映射类型都是一类数据类型的总称，这也是正确的。在Python中，序列类型（如列表、元组和字符串）和映射类型（如字典）是两类不同的数据结构类型。A. 字典类型的键可以使用的数据类型实际上是不可变类型，如字符串和元组，但不包括列表，因为列表是可变的。B. Python的集合类型与数学中的集合概念类似，但并不完全一致。在Python中，集合是可变的，这意味着可以添加或删除元素，而数学中的集合通常是不可变的。此外，Python的集合在底层实现上可能会有所不同，但它们确实表示无序的数据集合。'
     },
 
     {
@@ -269,7 +269,7 @@ var quiz = [
         'image':'',
         'choices':['A.random.randint (1,10)生成 [1,10] 之间的整数','B.import random代码是可以省略的','C.这段代码的功能是程序自动猜数字','D.while True:创建了一个永远执行的循环'],
         'correct':['C.这段代码的功能是程序自动猜数字','D.while True:创建了一个永远执行的循环'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -277,7 +277,7 @@ var quiz = [
         'image':'noc/202337.png',
         'choices':['A.BeaverYorker','B.BeaverNova','C.B&B','D.TomTeaver'],
         'correct':['A.BeaverYorker','D.TomTeaver'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -285,7 +285,7 @@ var quiz = [
         'image':'',
         'choices':['A.并集','B.交集','C.差集','D.异或集'],
         'correct':['A.并集','C.差集','D.异或集'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -293,7 +293,7 @@ var quiz = [
         'image':'',
         'choices':['A.222','B.98','C.120','D.199'],
         'correct':['A.222','B.98','D.199'],
-        'explanation':'random.random() 生成的浮点数范围是 0.0 <= X < 1.0'
+        'explanation':'[2023r1]random.random() 生成的浮点数范围是 0.0 <= X < 1.0'
     },
 
     {
@@ -301,7 +301,7 @@ var quiz = [
         'image':'',
         'choices':['A.-1','B.True','C.False','D.0'],
         'correct':['A.-1','C.False','D.0'],
-        'explanation':'非零的数字作为条件判断时，都为真，0 为假'
+        'explanation':'[2023r1]非零的数字作为条件判断时，都为真，0 为假'
     },
 
     {
@@ -309,7 +309,7 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['A.正确'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -317,7 +317,7 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['A.正确'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -325,7 +325,7 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['B.错误'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -333,7 +333,7 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['B.错误'],
-        'explanation':'Python中的浮点数默认为双精度（double-precision）浮点数，而不是单精度。Python使用双精度浮点数来提供更高的精度和范围。'
+        'explanation':'[2023r1]Python中的浮点数默认为双精度（double-precision）浮点数，而不是单精度。Python使用双精度浮点数来提供更高的精度和范围。'
     },
 
     {
@@ -341,7 +341,7 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['B.错误'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -349,7 +349,7 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['A.正确'],
-        'explanation':'在Python中，3+4j 是一个合法的复数表示。Python内置了对复数的支持，使用 j 或 J 来表示复数的虚部。所以，3+4j 表示一个实部为3，虚部为4的复数。'
+        'explanation':'[2023r1]在Python中，3+4j 是一个合法的复数表示。Python内置了对复数的支持，使用 j 或 J 来表示复数的虚部。所以，3+4j 表示一个实部为3，虚部为4的复数。'
     },
 
     {
@@ -357,56 +357,56 @@ var quiz = [
         'image':'',
         'choices':['A.正确','B.错误'],
         'correct':['B.错误'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':"49/55[填空题]. 执行以下代码，输出结果为<br>for a in 'mirror':<br>&nbsp;&nbsp;print(a, end=\"\")<br>&nbsp;&nbsp;if a == 'r':<br>&nbsp;&nbsp;&nbsp;&nbsp;break",
         'choices':['A.mir','B.aaa','C.aa','D.mi'],
         'correct':['A.mir'],
-        'explanation':'先打印，再判断'
+        'explanation':'[2023r1]先打印，再判断'
     },
 
     {
         'question':'50/55[填空题]. x=2.6，则表达式round(x)的值为',
         'choices':['A.2.6','B.3','C.2','D.2.5'],
         'correct':['B.3'],
-        'explanation':'四舍五入'
+        'explanation':'[2023r1]四舍五入'
     },
 
     {
         'question':'51/55[填空题]. 执行print(1 + 2 * 2 + 6 / 3) 的结果为',
         'choices':['A.4','B.7.0','C.7','D.4.0'],
         'correct':['B.7.0'],
-        'explanation':'整除操作符是//，/是浮点除'
+        'explanation':'[2023r1]整除操作符是//，/是浮点除'
     },
 
     {
         'question':'52/55[填空题]. 循环语句 for i in range(8,-4,-2)执行了几次循环',
         'choices':['A.6','B.7','C.5','D.0'],
         'correct':['A.6'],
-        'explanation':'range 含头不含尾'
+        'explanation':'[2023r1]range 含头不含尾'
     },
 
     {
         'question':'53/55[填空题]. 切片选取的区间是___型的，不包括结束位的值',
         'choices':['A.左开右闭','B.左闭右开','C.左开右开','D.左闭右闭'],
         'correct':['B.左闭右开'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
         'question':'54/55[填空题]. 下面代码的输出结果是<br>x=1<br>x *= 3+5**2<br>print(x)',
         'choices':['A.16','B.13','C.28','D.35'],
         'correct':['C.28'],
-        'explanation':'5**2 == 5 * 5'
+        'explanation':'[2023r1]5**2 == 5 * 5'
     },
 
     {
         'question':'55/55[填空题]. 阅读以下程序，程序运行后会输出几个 hello<br>n= 2<br>while n < 5:<br>&nbsp;&nbsp;print(\"hello\")<br>&nbsp;&nbsp;n=n+1',
         'choices':['A.2','B.3','C.4','D.5'],
         'correct':['B.3'],
-        'explanation':''
+        'explanation':'[2023r1]'
     },
 
     {
@@ -757,5 +757,174 @@ var quiz = [
         'correct':['A.对'],
         'explanation':'在 KMeans 算法中， n_clusters 中 cluster 就是类、簇的意思，参数的含义就是将数据分为几类， 这里参数的含义就是将数据分为 3 类。'
     },
+
+    {
+        "question":"1/40[单选题]下列关于input()说法错误的是？",
+        "choices":["A.提示信息应该写在input后面的小括号内","B.提示信息的内容为字符串时，可以不需要用引号包裹","C.返回的数据为字符串类型","D.当输入数字时，返回的数据依然是字符串类型"],
+        "correct":["B.提示信息的内容为字符串时，可以不需要用引号包裹"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"2/40 [单选题]已知代码：num=input('请输入数量：'），变量num的数据类型为？（）",
+        "choices":["A.整数类型","B.浮点数类型","C.字符串类型","D.布尔类型"],
+        "correct":["C.字符串类型"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"3/40 [单选题]已知代码：print('兔子',3,'只')，运行后输出的结果为？（）",
+        "choices":["A.兔子3只","B.兔子,3,只","C.'兔子',3,'只'","D.'兔子'3'只'"],
+        "correct":["A.兔子3只"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"4/40[单选题]以下选项中，正确使用print()指令的是？",
+        "choices":["A.print('number': 123456)","B.print[159]","C.print(6; 89)","D.print(\"123\")"],
+        "correct":["D.print(\"123\")"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"5/40[单选题]下列选项中，数据类型为整数的是？",
+        "choices":["A.0.1","B.2","C.'False'","D.False"],
+        "correct":["B.2"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"6/40[单选题]下列算术运算符中表示整除的是？（）",
+        "choices":["A.+","B./","C.%","D.//"],
+        "correct":["D.//"],
+        "explanation":"[2024r1]"
+    },
+
+
+    {
+        "question":"7/40 [单选题]用于判断两个数不相等，应该使用什么运算符？（）",
+        "choices":["A.<=","B.>","C.!=","D.=="],
+        "correct":["C.!="],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"8/40 [单选题]下列选项中，运算结果小于20的是？（）",
+        "choices":["A.print(25%6+37*2)","B.print(89-72%9)","C.print(86//6+12%5)","D.print(4*8-18%7)"],
+        "correct":["C.print(86//6+12%5)"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"9/40[单选题]下列变量的创建，正确的是？（）",
+        "choices":["A.num=123","B.123:'***'","C.n==123","D.True = 'name'"],
+        "correct":["A.num=123"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"10/40[单选题]下列选项中，变量命名正确的是？（）",
+        "choices":["A.%k=10","B.7rw=123","C.u_o='blue'","D.u 9='苹果'"],
+        "correct":["C.u_o='blue'"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"11/40 [单选题]代码如下，下列哪一项是代码最后一次输出的结果？（）<br>n=2<br>while n < 10:<br>&nbsp;&nbsp;n=n*4<br>&nbsp;&nbsp;print(n)",
+        "choices":["A.2","B.4","C.10","D.32"],
+        "correct":["D.32"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"12/40[单选题]直到程序结束，下方代码共循环了多少次？（）<br>n=2<br>while n < 10:<br>&nbsp;&nbsp;if n >= 7:<br>&nbsp;&nbsp;&nbsp;&nbsp;n=n%3<br>&nbsp;&nbsp;n=n*3<br>print(n)",
+        "choices":["A.4次","B.3次","C.2次","D.1次"],
+        "correct":["C.2次"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"13/40[单选题]横线处填写什么内容才能使最终结果输出8？（）<br>num = 1<br>while num < 8:<br>&nbsp;&nbsp;______<br>print(num)",
+        "choices":["A.num = num + 2","B.num = num * 2","C.num = num // 2","D.num = num % 2"],
+        "correct":["B.num = num * 2"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"14/40 [单选题]下列程序的运行结果为？（）<br>m= 4<br>while m < 10:<br>&nbsp;&nbsp;if m> 5:<br>&nbsp;&nbsp;&nbsp;&nbsp;m =m%2<br>&nbsp;&nbsp;else:<br>&nbsp;&nbsp;&nbsp;&nbsp;m= m*3<br>print(m)",
+        "choices":["A.0","B.4","C.12","D.无输出结果"],
+        "correct":["C.12"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"15/40 [单选题]已知下方代码，如果输入的颜色为'orange’，下列哪一项为正确的输出结果？（）<br>n=input('颜色：')<br>sum = 8<br>if n == 'red':<br>&nbsp;&nbsp;sum = sum *6<br>if n == 'yellow':<br>&nbsp;&nbsp;sum = sum // 3<br>if n == 'orange':<br>&nbsp;&nbsp;sum = sum + 2*sum<br>print(sum)",
+        "choices":["A.8","B.48","C.2","D.24"],
+        "correct":["D.24"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"16/40[单选题]已知下方代码，下列哪一项为正确的输出结果？<br>s = 'apple'<br>if s == 'apple':<br>&nbsp;&nbsp;print(苹果)<br>print(水果)",
+        "choices":["A.苹果","B.水果","C.苹果<br>水果","D.水果<br>苹果"],
+        "correct":["C.苹果<br>水果"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"17/40 [单选题]已知下方代码，下列哪一项为正确的输出结果？<br>n= 126<br>if n>58<br>&nbsp;&nbsp;print('大')<br>else:<br>&nbsp;&nbsp;print(小)<br>print(无法判断)",
+        "choices":["A.大","B.大<br>小","C.报错","D.小"],
+        "correct":["A.大"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"18/40[单选题]下列选项中，符合if-else语句基本结构的是？（）",
+        "choices":["A.if 判断条件:<br>&nbsp;&nbsp;代码块1<br>else:<br>代码块2","B.if 判断条件:<br>&nbsp;&nbsp;代码块1<br>else:<br>&nbsp;&nbsp;代码块2","C.if 判断条件<br>&nbsp;&nbsp;代码块1<br>else<br>&nbsp;&nbsp;代码块2","D.if判断条件:<br>代码块1<br>else:<br>代码块2"],
+        "correct":["B.if 判断条件:<br>&nbsp;&nbsp;代码块1<br>else:<br>&nbsp;&nbsp;代码块2"],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"",
+        "image":"noc/mock27.png",
+        "choices":["A.","B.","C.","D."],
+        "correct":["A.","D."],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"",
+        "image":"noc/mock27.png",
+        "choices":["A.","B.","C.","D."],
+        "correct":["A.","D."],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"",
+        "image":"noc/mock27.png",
+        "choices":["A.","B.","C.","D."],
+        "correct":["A.","D."],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"",
+        "image":"noc/mock27.png",
+        "choices":["A.","B.","C.","D."],
+        "correct":["A.","D."],
+        "explanation":"[2024r1]"
+    },
+
+    {
+        "question":"",
+        "image":"noc/mock27.png",
+        "choices":["A.","B.","C.","D."],
+        "correct":["A.","D."],
+        "explanation":"[2024r1]"
+    },
+
+
 
 ];
